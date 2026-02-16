@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public GameObject selectedZombie;
@@ -8,6 +9,8 @@ public class GameManager : MonoBehaviour
     private InputAction left, right, Jump;
     private int selectedIndex;
     public Vector3 pushForce;
+    public TMP_Text timerText;
+    private float time = 0;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -56,5 +59,7 @@ public class GameManager : MonoBehaviour
             rb.AddForce(pushForce);
             Debug.Log("Jump is pressed");
         }
+        time += Time.deltaTime;
+        timerText.text = "Time:" + time.ToString("F1") + "s";
     }
 }
