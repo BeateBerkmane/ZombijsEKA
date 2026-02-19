@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour
     public int zombiesInDeathZone = 0;
     public GameObject startPanel; 
     public bool gameStarted = false;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public static GameManager Instance;
+    
     void Start()
     {
         Time.timeScale = 0f;
@@ -91,6 +91,12 @@ public class GameManager : MonoBehaviour
         AudioManager.Instance.StopMusic();
         AudioManager.Instance.PlaySFX(AudioManager.Instance.winSound);
 
+    }
+
+    void Awake()
+    {
+        Instance = this;
+        
     }
     
     // Update is called once per frame

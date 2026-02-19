@@ -9,7 +9,7 @@ public class DeathZone : MonoBehaviour
             GameManager gm = FindAnyObjectByType<GameManager>();
             gm.zombiesInDeathZone++;
 
-            // Ja visi zombiji ir iekšā → lose
+            
             if (gm.zombiesInDeathZone >= gm.zombies.Length)
             {
                 gm.LoseGame();

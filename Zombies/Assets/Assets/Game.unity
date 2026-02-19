@@ -526,6 +526,10 @@ PrefabInstance:
       value: Trophy (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
       value: Collectible
       objectReference: {fileID: 0}
@@ -805,6 +809,10 @@ PrefabInstance:
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_Name
       value: Trophy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
@@ -1294,6 +1302,10 @@ PrefabInstance:
       value: Trophy
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
       value: Collectible
       objectReference: {fileID: 0}
@@ -1635,6 +1647,10 @@ PrefabInstance:
       value: Trophy (8)
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
       value: Collectible
       objectReference: {fileID: 0}
@@ -1813,6 +1829,60 @@ MonoBehaviour:
   rotationSpeed: 50
   scaleAmount: 0.2
   scaleSpeed: 3
+--- !u!1 &758808250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 758808252}
+  - component: {fileID: 758808251}
+  m_Layer: 0
+  m_Name: CollectibleActivator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &758808251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758808250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aaa9346ec67d2a4c90f68fd529dfec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectibles:
+  - {fileID: 380131468}
+  - {fileID: 754929625}
+  - {fileID: 1240226908}
+  - {fileID: 470212155}
+  - {fileID: 523981631}
+  - {fileID: 436860633}
+  - {fileID: 267000034}
+  minDelay: 0.1
+  maxDelay: 0.2
+--- !u!4 &758808252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758808250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6585696, y: 0.3396305, z: -21.734705}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &840785129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2085,6 +2155,10 @@ PrefabInstance:
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_Name
       value: Trophy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
@@ -3371,6 +3445,10 @@ PrefabInstance:
       value: Trophy (5)
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
       value: Collectible
       objectReference: {fileID: 0}
@@ -4611,6 +4689,10 @@ PrefabInstance:
       value: Trophy (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3452915741271081163, guid: 3f2245bee0a16594fa5461000f35ddc4, type: 3}
       propertyPath: m_TagString
       value: Collectible
       objectReference: {fileID: 0}
@@ -4643,3 +4725,4 @@ SceneRoots:
   - {fileID: 1431024504}
   - {fileID: 673717187}
   - {fileID: 1005703674}
+  - {fileID: 758808252}

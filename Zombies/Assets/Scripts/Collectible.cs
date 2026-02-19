@@ -8,10 +8,14 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Zombie"))
         {
-            GameManager gm = FindAnyObjectByType<GameManager>();
-            gm.AddScore(value);
-            Destroy(gameObject);
+            
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.collectSound);
+
+            
+            GameManager.Instance.AddScore(value);
+
+            
+            gameObject.SetActive(false);
         }
-        AudioManager.Instance.PlaySFX(AudioManager.Instance.collectSound);
     }
 }
